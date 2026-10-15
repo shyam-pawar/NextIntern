@@ -32,7 +32,24 @@ export const HomePage = ({ setCurrentPage }) => {
         <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-gradient-to-tr from-sky-400/20 via-indigo-300/20 to-purple-400/20 blur-3xl rounded-full pointer-events-none -z-10" />
 
         <div className="max-w-4xl mx-auto text-center space-y-6 px-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-semibold shadow-sm">
+          {/* 3D Header Banner for Shyam Pawar */}
+          <div className="inline-block">
+            <div className="container-3d px-6 py-2.5 rounded-2xl inline-flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-md shadow-sky-500/30">
+                <Briefcase className="w-4 h-4" />
+              </div>
+              <div className="text-left">
+                <span className="text-[10px] uppercase font-extrabold tracking-widest text-slate-400 block leading-tight">
+                  Talent Platform
+                </span>
+                <span className="text-3d-header text-xl sm:text-2xl font-black text-slate-900 tracking-wider">
+                  SHYAM PAWAR
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-semibold shadow-sm block sm:inline-flex">
             <Sparkles className="w-3.5 h-3.5 text-sky-500" />
             <span>Applications Open for 2026 Cohorts</span>
           </div>

@@ -70,7 +70,7 @@ export const Footer = ({ setCurrentPage }) => {
         </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© 2026 NexIntern Corporation. All rights reserved.</p>
+          <p>© 2026 NexIntern Portal • Developed & Curated by <span className="font-semibold text-slate-300">Shyam Pawar</span>. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <span className="hover:text-slate-400 cursor-pointer">Equal Opportunity Employer</span>
             <span className="hover:text-slate-400 cursor-pointer">Privacy Terms</span>

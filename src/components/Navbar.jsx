@@ -12,21 +12,23 @@ export const Navbar = ({ currentPage, setCurrentPage }) => {
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Logo & 3D Header */}
           <div 
             onClick={() => setCurrentPage('home')}
             className="flex items-center gap-2.5 cursor-pointer group"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-md shadow-sky-500/25 group-hover:scale-105 transition-transform shrink-0">
               <Briefcase className="w-5 h-5" />
             </div>
-            <div>
-              <span className="font-extrabold text-xl tracking-tight bg-gradient-to-r from-slate-900 via-sky-900 to-indigo-950 bg-clip-text text-transparent">
-                NexIntern
-              </span>
-              <span className="hidden sm:inline-block text-[10px] font-semibold uppercase tracking-wider text-sky-600 bg-sky-50 px-2 py-0.5 rounded-full ml-2 border border-sky-200">
-                Talent Hub
-              </span>
+            <div className="flex flex-col">
+              <div className="flex items-center gap-2">
+                <span className="text-3d-header text-base sm:text-xl font-black tracking-wider text-slate-900 group-hover:text-sky-600 transition-colors">
+                  SHYAM PAWAR
+                </span>
+                <span className="hidden sm:inline-block text-[10px] font-extrabold uppercase tracking-wider text-sky-600 bg-sky-50 px-2 py-0.5 rounded-full border border-sky-200">
+                  NexIntern
+                </span>
+              </div>
             </div>
           </div>
 
